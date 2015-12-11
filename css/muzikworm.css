@@ -1,0 +1,176 @@
+a{
+  text-decoration: none !important;
+}
+.anchor {
+    margin-top: -50px !important;
+    padding-top: 50px !important;
+}
+body
+{
+  background-color: #E8E8E8;
+}
+.heading
+{
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  text-align:center;
+  color: #989898;
+  position: relative;
+}
+.logo
+{
+  height:100px;
+  background-color:rgba(166, 166, 166,0.5);
+  z-index: -10000;
+  max-width: auto;
+}
+.logoimg{
+  height: 300px;
+  width:300px;
+  z-index: 10;
+}
+
+.images-gallery
+{
+  width: 1600px !important;
+  height:550px !important;
+}
+.carousel{
+    background: #989898 ;
+    margin-top: 20px;
+
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.slider-top{
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+
+.below
+{
+  z-index: 0 !important;
+}
+.over{
+z-index:1000  !important;
+}
+
+
+.navbar-custom li a
+{
+  color: black !important;
+  opacity: 1;
+   
+}
+.navbar-collapse{
+  text-align: center;
+}
+.navbar-nav{
+  display: inline-block;
+  float: none;
+}
+.navbar
+{
+  width: 100%;
+  background-color: #989898;
+  border:none;
+ 
+  text-align: center !important;
+  opacity: 0.5;
+
+}
+
+.navbar a:active
+{
+  color:#000 !important;
+}
+ul.navbar-nav a:hover 
+{ 
+  color: #FFFFFF !important; 
+  opacity: 1 !important;
+}
+.images-custom
+{
+z-index: 0!important;
+padding-bottom: 20px;
+height: 250px;
+width:300px;
+}
+.affix 
+{
+  top: 0;
+  width: 100%;
+}
+
+.affix + .container-fluid
+{
+  padding-top: 70px;
+}
+.footer
+{
+  width: auto;
+  height:200px;
+  background-color: #505050;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.footer-text{
+  color: white;
+  text-align: center;
+}
+.video{
+ margin-right: 20px;
+ float:right;
+}
+.blank
+{
+  width: auto;
+  height:20px;
+}
+#bgvid{
+
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+#watchimgages { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 0px; 
+   text-align: right;
+   right: 200px;
+   font-size: 15px;
+   color: white !important; 
+   letter-spacing: 3px;  
+   font-family: Raleway, sans-serif;
+   width: 100%; 
+}
+h2 a{
+  color: white;
+}
+h2 a:hover{
+  color: #989898;
+}
+.watchicon{
+  height: 50px;
+  width: 50px;
+}

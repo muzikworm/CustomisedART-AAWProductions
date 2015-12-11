@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Form</title>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/form.css">
+
+</head>
+<body background="images/slider/4.jpg" class="bodybackground">
+  
+  <h1>A Little About You</h1>
+	<form id="personalform" action="" method="POST" target="blanktarget">
+    <fieldset class="form-group">
+    <label for="nameofuser">Name</label>
+     <input type="text" class="form-control" id="firstname" placeholder="Your full name" required> 
+  </fieldset>
+ <fieldset class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+    <small class="text-muted">We'll never share your email with anyone else.</small>
+  </fieldset>
+   <fieldset class="form-group">
+    <label for="phonenumber">Phone Number</label>
+    <input type="text" maxlength="10" class="form-control" id="phonenumber" placeholder="Phone Number" required>
+    <small class="text-muted">We will contact you on this number.</small>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleInputEmail1">Address</label><br/>
+    <input type="text" class="form-control inline" id="hno" size="30" placeholder="House Number" required>
+    <input type="text" class="form-control inline" id="lane" size="30" placeholder="Lane/Apartment/Building" required>
+    <input type="text" class="form-control" id="city" size="30" placeholder="City/Area/Locality" required>
+     
+    <select class="form-control" id="state" required>
+          <option value="">------------Select State------------</option><option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option><option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option><option value="Bihar">Bihar</option>
+          <option value="Chandigarh">Chandigarh</option><option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option><option value="Daman and Diu">Daman and Diu</option>
+          <option value="Delhi">Delhi</option><option value="Goa">Goa</option><option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option><option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Lakshadweep">Lakshadweep</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Orissa">Orissa</option>
+          <option value="Pondicherry">Pondicherry</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttaranchal">Uttaranchal</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="West Bengal">West Bengal</option>
+
+    </select>
+    <br/>
+     <input class="form-control" maxlength="6" type="text" class="form-control" id="pin" size="30" placeholder="PIN CODE" required>
+  </fieldset>
+
+  <button id="button" onclick="submitdata" type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<iframe src="#" id="blanktarget" name="blanktarget" style="visibility:hidden"></iframe>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/form.js"></script>
+</body>
+</html>
