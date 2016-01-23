@@ -46,8 +46,8 @@ body
 }
 .logoimg{
   height: 300px;
-  width:300px;
-  z-index: 10;
+  width:250px;
+  z-index: 100000000;
 }
 
 .images-gallery
@@ -62,6 +62,10 @@ body
 }
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
+}
+.right{
+  text-align: center;
+  vertical-align: center;
 }
 .slider-top{
   margin: 20px;
@@ -167,6 +171,20 @@ width:300px;
     background: url(polina.jpg) no-repeat;
     background-size: cover;
 }
+#bgvid1{
+
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+}
 #watchimgages { 
    position: relative; 
    width: 100%; /* for IE 6 */
@@ -176,7 +194,7 @@ h2 {
    position: absolute; 
    top: 0px; 
    text-align: right;
-   right: 200px;
+   float:right;
    font-size: 15px;
    color: white !important; 
    letter-spacing: 3px;  
@@ -288,10 +306,30 @@ footer .footer-below {
     outline: 0;
     color:#989898;
 }
-
+.video{
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
 .videomodalclass{
-  width: 100% !important;
-  height: 100% !important;
+  overflow: hidden;
+  height: 100%;
+}
+.modal-video{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.modal-video video{
+  min-height: 100%;
+  min-width: 100%;
+}
+.modal-video div,.modal-video .videobutton{
+
+  top: 0px;
+  text-align:right !important;
+    position: absolute;
 }
 @media screen and (max-device-width: 500px) {
     html {
@@ -300,4 +338,61 @@ footer .footer-below {
     #bgvid {
         display: none;
     }
+}
+ .videobutton{
+  float: right !important;
+  background-color: transparent;
+  border: none;
+ }
+span.text-content {
+  font-family: Raleway, sans-serif;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: table;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  height: 230px;
+  width:300px;
+  transition:all 300ms;
+}
+
+span.text-content span {
+  display: table-cell;
+}
+
+.product{
+
+}
+div.product a:hover span.text-content{
+
+opacity: 1;
+-webkit-transform:scale(0.7);
+-moz-transform:scale(0.7);
+transform:scale(0.7);
+}
+
+
+
+/* product ke liye css*/
+.productimage{
+  margin:auto;
+  height: 300px;
+  width:300px;
+  color: #FFFFFF;
+  border-radius: 50%; 
+}
+.desc{
+  height: 150px;
+  background-color: black;
+  position: relative;
+}
+.artist{ 
+  height: 70px;
+  background-color: black;
+  position: absolute;
 }

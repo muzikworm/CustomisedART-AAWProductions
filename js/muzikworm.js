@@ -25,6 +25,7 @@ $(document).ready(function(){
     });
 });
 
+
 $( document ).ready(function() {
     $("[rel='tooltip']").tooltip();    
  

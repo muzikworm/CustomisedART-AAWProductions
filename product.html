@@ -1,66 +1,195 @@
 <html>
 <head>
-<title>Form</title>
+<title>Product  </title>
 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/form.js"></script>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/form.css">
+<meta charset="utf-7">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Customised Art an intitiative by AAWProductions">
+  <meta name="author" content="Kunal Sharma">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/product.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+$.fn.scrollList = function (delay) {
+    delay = delay || 200;
+    var animateList = function ($list) {
+        //get first child
+        var $first = $list.children('li:first');
+        var width = $first.outerWidth(true);
+        //animate first two off the screen
+        $first.animate({
+            'margin-left': $list.width() * -1
+        },
+        // on animation complete
+        function () {
+            //reset and move to the end of the list
+            $(this).css('margin-left', 0).add($(this).next()).appendTo($list);
+            //start again after delay
+            setTimeout(function () {
+                animateList($list)
+            }, delay);
+        });
+    };
+
+    return this.each(function () {
+        var $that = $(this)
+        setTimeout(function () {
+            animateList($that);
+        }, delay);
+    });
+
+};
+  
+  $('.carousel ul').scrollList();
+$('.carousel ul li').hover(function() {
+        clearInterval(delay);
+    },
+    function() {
+        delay = setInterval(delay, 5000);
+    });  
+});//]]> 
+
+</script>
 
 </head>
-<body background="" class="bodybackground">
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-  <h1>Customise your artwork here</h1>
+<body  style="overflow-x:hidden;" >
 
- <fieldset class="form-group">
-    <label for="exampleSelect1">Art Work</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>Pencil On Paper</option>
-      <option>Shit</option>
-      <option>Shitty</option>
-      <option>Shittyshit</option>
-      <option>shitshit</option>
-    </select>
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleSelect2">Size Of Artwork(you can select multiple sizes)</label>
-    <select multiple class="form-control" id="exampleSelect2">
-      <option>A1</option>
-      <option>A2</option>
-      <option>A3</option>
-      <option>A4</option>
-    </select>
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleTextarea">Describe your ArtWork</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleInputFile">Upload a simillar picture</label>
-    <input type="file" class="form-control-file" id="exampleInputFile">
-    <small class="text-muted">Give us some hint as to know exactly what you want</small>
-  </fieldset>
 
-  <button id="button"type="submit" class="btn btn-primary">Submit</button>
-</form>
+<div class="container-fluid logo ">
+   <div id="product-heading">
+    <h1>products</h1>
+  </div>
+  <div id='carousel-custom' class='container carousel slide' data-ride='carousel'>
+    <ul class='carousel-indicators' style="overflow-x:hidden; ">
+        <li data-target='#carousel-custom' data-slide-to='0' class='active'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='1'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='2'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='3'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='4'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='5'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='6'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='7'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='8'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='9'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='10'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='11'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='12'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='13'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='14'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='15'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='16'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='17'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='18'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='19'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
 
-<iframe src="#" id="blanktarget" name="blanktarget" style="visibility:hidden"></iframe>
+    </ul> 
+</div>
+</div>
 
-<script>
-    $('#personalform').one('submit',function(){
-        var name = encodeURIComponent($('#firstname').val());
-        var nameid="entry.23690980";
-        var email=encodeURIComponent($("#email").val());
-        var emailid="entry.1412988977";
-        
+<nav class="navbar navbar-inverse over" data-spy="affix" data-offset-top="200" >
+  <div class="container">
+             <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                 <ul class="nav navbar-nav navbar-custom " id="navbarCollapse">
+                    <li ><a href='index.html'>Home</a></li>
+                    <li ><a href='#product'>Products</a></li>
+                    <li ><a href='#Gallery'>Gallery</a></li>
+                    <li ><a href='index.html#howitworks'>How it works</a></li>
+                    <li ><a href='form.html'>Request an order</a></li>
+                    <li ><a href='#'>Be an artist</a></li>
+                    <li ><a href='index.html#contactus'>contact us</a></li>
+                  </ul>
+            </div>
+  </div>
+</nav>
+<div class="blank">
+</div>
+<div class="blank">
+</div>
 
-        var baseURL = 'https://docs.google.com/forms/d/1giSEkb1nVlqoTX0DW96eWUDhxasIBfqtOdqLEux-g6M/formResponse?';
-        var submitRef = '&submit=Submit';
-        var submitURL = (baseURL + nameid+"="+name+"&"+emailid+"="+email+ submitRef);
-        console.log(submitURL);
-        $(this)[0].action=submitURL;
-    });
-</script>
+<div class="blank">
+</div>
+<div class="first">
+  <div class="row">
+     <div class="col-lg-4 ">
+       <img class="productimage img-responsive" src="images/slider/1.jpg">
+     </div>
+   
+     <div class="col-lg-8">
+            <div class="desc hidden-sm hidden-xs">
+            </div>
+            <div class="blank">
+            </div>
+            <div class="hidden-sm hidden-xs">
+              <div class="row">
+                 <div class="col-lg-2">    
+                      <img class="artistimage img-responsive" src="images/slider/1.jpg">
+                  </div>
+                 <div class="col-lg-6 artist">
+                    <p>hellosnsnvnlsnvlsvlvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv </p>
+                 </div>
+                  
+              </div>
+            </div>   
+     </div>
+  </div> 
+</div>
+
+<div class="blank">
+</div>
+<div class="second">
+  <div class="row">
+     <div class="col-lg-8">
+            <div class="desc hidden-sm hidden-xs">
+            </div>
+            <div class="blank">
+            </div>
+            <div class="hidden-sm hidden-xs">
+              <div class="row">
+                 <div class="col-lg-2">    
+                      <img class="artistimage img-responsive" src="images/slider/1.jpg">
+                  </div>
+                 <div class="col-lg-6 artist">
+                    <p>hellosnsnvnlsnvlsvlvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv </p>
+                 </div>
+                  
+              </div>
+            </div>   
+     </div>
+     <div class="col-lg-4 ">
+       <img class="productimage img-responsive" src="images/slider/1.jpg">
+     </div>
+  </div> 
+</div>
+
+<div class="footer">
+ <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright@AAWProductions:All rights Reserved LOLwa Muthfuckha
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
-<!--", "", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Orissa", "Pondicherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Tripura", "Uttaranchal", "Uttar Pradesh", "West Bengal"
