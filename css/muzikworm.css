@@ -339,8 +339,8 @@ footer .footer-below {
         display: none;
     }
 }
- .videobutton{
-  float: right !important;
+button.videobutton{
+  float:left;
   background-color: transparent;
   border: none;
  }

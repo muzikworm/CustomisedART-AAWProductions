@@ -294,9 +294,10 @@ footer .footer-below {
   margin-right: 20px;
   margin-left: 20px;
   height: 150px;
-  background-color: #989898;
+  background-color: #d9d9d9;
   position: relative;
   width: 80%;
+  border-radius:10%; 
 }
 .artist{ 
   height: 70px;
@@ -339,3 +340,28 @@ footer .footer-below {
 #carousel-custom .carousel-indicators li:hover img {
     opacity: 0.75;
 }
+.desc p{
+  font-family: Raleway,sans-serif;
+  font-size: 15px;
+  text-align: left;
+  margin-left:  10px;
+  margin-right:  10px;
+ }
+ .desc h1{
+  font-family: Raleway,sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin:  10px;
+ }
+ .artist p{
+font-family: Raleway,sans-serif;
+  font-size: 15px;
+  text-align: left;
+  margin:  10px;
+ }
+ .artist p1{
+  font-family: Raleway,sans-serif;
+  font-size: 13px;
+  text-align: right;
+  float: right;
+ }
