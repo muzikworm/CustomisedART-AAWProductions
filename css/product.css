@@ -332,13 +332,21 @@ footer .footer-below {
 }
 #carousel-custom .carousel-indicators li img {
     display: block;
-    opacity: 0.5;
+    opacity: 1;
 }
 #carousel-custom .carousel-indicators li.active img {
     opacity: 1;
 }
-#carousel-custom .carousel-indicators li:hover img {
-    opacity: 0.75;
+
+.first{
+background-color: ;
+}
+.second{
+background-color:#f2f2f2  ;
+
+margin-top: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 .desc p{
   font-family: Raleway,sans-serif;

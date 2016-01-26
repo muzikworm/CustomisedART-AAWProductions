@@ -17,14 +17,14 @@
 <script type='text/javascript'>//<![CDATA[
 $(window).load(function(){
 $.fn.scrollList = function (delay) {
-    delay = delay || 200;
+    delay = delay || 2000;
     var animateList = function ($list) {
         //get first child
         var $first = $list.children('li:first');
         var width = $first.outerWidth(true);
         //animate first two off the screen
         $first.animate({
-            'margin-left': $list.width() * -1
+            'margin-left': $list.width()
         },
         // on animation complete
         function () {
@@ -68,25 +68,25 @@ $('.carousel ul li').hover(function() {
   <div id='carousel-custom' class='container carousel slide' data-ride='carousel'>
     <ul class='carousel-indicators' style="overflow-x:hidden; ">
         <li data-target='#carousel-custom' data-slide-to='0' class='active'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='1'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='2'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='3'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='4'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='5'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='6'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='7'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='8'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='9'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='10'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='11'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='12'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='13'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='14'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='15'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='16'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='17'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='18'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
-        <li data-target='#carousel-custom' data-slide-to='19'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='1' class='active'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='2' class='active'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='3' class='active'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='4' class='active'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='5' class='active'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='6' class='active'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='7' class='active'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='8' class='active'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='9' class='active'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='10'class='active'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='11'class='active'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='12'class='active'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='13'class='active'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='14'class='active'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='15'class='active'><img class="header-images" src="images/slider/4.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='16'class='active'><img class="header-images" src="images/slider/5.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='17'class='active'><img class="header-images" src="images/slider/1.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='18'class='active'><img class="header-images" src="images/slider/2.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='19'class='active'><img class="header-images" src="images/slider/3.jpg" alt='' /></li>
 
     </ul> 
 </div>
@@ -123,6 +123,8 @@ $('.carousel ul li').hover(function() {
 <div class="blank">
 </div>
 
+
+
 <div class="blank">
 </div>
 <div class="first">
@@ -140,7 +142,7 @@ $('.carousel ul li').hover(function() {
             </div>
             <div class="hidden-sm hidden-xs">
               <div class="row">
-                 <div class="col-lg-2">    
+                 <div class="col-lg-2"> 
                       <img class="artistimage img-responsive" src="images/slider/1.jpg">
                   </div>
                  <div class="col-lg-6 artist">
@@ -153,6 +155,8 @@ $('.carousel ul li').hover(function() {
      </div>
   </div> 
 </div>
+
+
 
 <div class="blank">
 </div>
@@ -184,6 +188,9 @@ $('.carousel ul li').hover(function() {
   </div> 
 </div>
 
+
+<div class="blank">
+</div>
 <div class="first">
   <div class="row">
      <div class="col-lg-4 ">
@@ -213,6 +220,8 @@ $('.carousel ul li').hover(function() {
   </div> 
 </div>
 
+
+
 <div class="blank">
 </div>
 <div class="second">
@@ -226,8 +235,8 @@ $('.carousel ul li').hover(function() {
             </div>
             <div class="hidden-sm hidden-xs">
               <div class="row">
-                 <div class="col-lg-2">    
-                      <img class="artistimage img-responsive" src="images/slider/1.jpg"><!-- Image link for product-->
+                 <div class="col-lg-2">
+                       <img class="artistimage img-responsive" src="images/slider/1.jpg"><!-- Image link for product-->
                   </div>
                  <div class="col-lg-6 artist">
                     <p>hellosnsnvnlsnvlsvlvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv </p> <!-- descrition from artist-->
@@ -242,7 +251,12 @@ $('.carousel ul li').hover(function() {
      </div>
   </div> 
 </div>
-<div class="footer">
+
+
+
+
+<div class="blank">
+            </div>
  <footer class="text-center">
         <div class="footer-below">
             <div class="container">
@@ -253,7 +267,7 @@ $('.carousel ul li').hover(function() {
                 </div>
             </div>
         </div>
-    </footer>
-</div>
+</footer>
+
 </body>
 </html>
