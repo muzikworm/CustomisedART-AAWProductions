@@ -10,29 +10,73 @@
 </head>
 <body background="images/slider/4.jpg" class="bodybackground">
   
-  <h1>A Little About You</h1>
+  <h1>Request an Order Here</h1><br></br>
 	<form id="personalform" action="" method="POST" target="blanktarget">
     <fieldset class="form-group">
-    <label for="nameofuser">Name</label>
-     <input type="text" class="form-control" id="firstname" placeholder="Your full name" required> 
+    <label for="nameofuser">Name:</label>
+     <input type="text" class="form-control" form style="width: 300px" id="firstname" placeholder="Your full name" required> 
   </fieldset>
  <fieldset class="form-group">
-    <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" form style="width: 300px" id="email" placeholder="Enter email" required>
     <small class="text-muted">We'll never share your email with anyone else.</small>
   </fieldset>
    <fieldset class="form-group">
-    <label for="phonenumber">Phone Number</label>
-    <input type="text" maxlength="10" class="form-control" id="phonenumber" placeholder="Phone Number" required>
+    <label for="phonenumber">Phone Number:</label>
+    <input type="text" maxlength="10" class="form-control" form style="width: 150px" id="phonenumber" placeholder="Phone Number" required>
     <small class="text-muted">We will contact you on this number.</small>
   </fieldset>
   <fieldset class="form-group">
-    <label for="exampleInputEmail1">Address</label><br/>
-    <input type="text" class="form-control inline" id="hno" size="30" placeholder="House Number" required>
-    <input type="text" class="form-control inline" id="lane" size="30" placeholder="Lane/Apartment/Building" required>
-    <input type="text" class="form-control" id="city" size="30" placeholder="City/Area/Locality" required>
+    <label for="Medium">Medium:</label>
+    
+    <small class="text-muted"></small>
+    <select class="form-control" form style="width: 150px" id="Medium" required>
+          <option value="">------Medium-----</option>
+          <option value="Charcoal">Charcoal</option>
+          <option value="Pencil">Pencil</option>
+          <option value="Pen on paper">Pen on paper</option>
+          <option value="Pencil Colour">Pencil Colour</option>
+          <option value="Water Colour">Water Colour</option>
+          <option value="Acrylic On Canvas">Acrylic On Canvas</option>
+          <option value="Acrylic On Sheet">Acrylic On Sheet</option>
+          <option value="Digital">Digital</option>
+        
+
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="Size">Size:</label>
+    
+    <small class="text-muted"></small>
+    <select class="form-control" form style="width: 80px" id="Size" required>
+          <option value="">Size</option>
+          <option value="A3">A3</option>
+          <option value="A4">A4</option>
+          
+        
+
+    </select>
+  </fieldset>
+  <fieldset class="form group">
+  <!--<li class="form-line jf-required form-line-error" data-type="control_textarea" id="id_6">-->
+        <label class="form-label form-label-left form-label-auto" id="label_6" for="input_6">
+         Description of the artwork or any text you want on it:
+        </label>
+        <div id="cid_5" class="form-input jf-required">
+          <span class="form-sub-label-container" style="vertical-align: top">
+            <textarea id="input_6" class="form-textarea validate[required]" name="q6_descriptionOf6" cols="57" rows="6"></textarea>
+            <label class="form-sub-label" for="input_6" style="min-height: 13px;"> <!--Should we need to know anything about this file?--> </label>
+                  </span>
+        </div>
+       </fieldset>
+     <br></br>
+  <fieldset class="form-group">
+    <label for="exampleInputEmail1">Address:</label><br/>
+    <input type="text" class="form-control inline"  id="hno" size="30" form style="width: 300px" placeholder="House Number" required>
+    <input type="text" class="form-control inline" id="lane" size="30" form style="width: 300px" placeholder="Lane/Apartment/Building" required>
+    <input type="text" class="form-control" id="city" size="30" form style="width: 300px" placeholder="City/Area/Locality" required>
      
-    <select class="form-control" id="state" required>
+    <select class="form-control" form style="width: 300px" id="state" required>
           <option value="">------------Select State------------</option><option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
           <option value="Andhra Pradesh">Andhra Pradesh</option><option value="Arunachal Pradesh">Arunachal Pradesh</option>
           <option value="Assam">Assam</option><option value="Bihar">Bihar</option>
@@ -64,7 +108,13 @@
 
     </select>
     <br/>
-     <input class="form-control" maxlength="6" type="text" class="form-control" id="pin" size="30" placeholder="PIN CODE" required>
+     <input class="form-control" maxlength="6" type="text" class="form-control" id="pin" size="30" form style="width: 100px"placeholder="PIN CODE" required>
+     <!--<li class="form-line" data-type="control_textbox" id="id_9">-->
+        <label class="form-label form-label-left form-label-auto" id="label_9"  for="input_9"> Referral Code, if any: </label>
+        <div id="cid_9" class="form-input jf-required">
+          <input type="text" class=" form-textbox" data-type="input-textbox" id="input_9" name="q9_referralCode9" size="20" form style="width: 69" value="">
+        </div>
+      </li>
   </fieldset>
 
   <button id="button" onclick="submitdata" type="submit" class="btn btn-primary">Submit</button>
