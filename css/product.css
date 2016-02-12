@@ -278,8 +278,15 @@ footer .footer-below {
 /* product ke liye css*/
 .productimage{
   margin:auto;
-  height: 300px;
-  width:300px;
+  height: 400px;
+  width:500px;
+  color: #FFFFFF;
+  border-radius: 50%; 
+}
+.productimage1{
+  margin:auto;
+  height: 400px;
+  width:500px;
   color: #FFFFFF;
   border-radius: 50%; 
 }
