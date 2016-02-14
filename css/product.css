@@ -279,16 +279,16 @@ footer .footer-below {
 .productimage{
   margin:auto;
   height: 400px;
-  width:500px;
+  width:  500px;
   color: #FFFFFF;
-  border-radius: 50%; 
+  border-radius: 20%; 
 }
 .productimage1{
   margin:auto;
   height: 400px;
   width:500px;
   color: #FFFFFF;
-  border-radius: 50%; 
+  border-radius: 20%; 
 }
 .artistimage{
   margin:auto;
