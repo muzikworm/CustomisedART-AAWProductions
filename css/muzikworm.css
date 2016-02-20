@@ -411,3 +411,9 @@ transform:scale(0.7);
   color: black;
   font-size: 13px;
 } 
+.footer-last{
+  text-align: center;
+}
+.footer-last a{
+  text-decoration: none !important;
+}
