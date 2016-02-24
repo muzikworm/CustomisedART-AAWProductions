@@ -7,7 +7,7 @@ a{
 }
 body
 {
-  background-color: #E8E8E8;
+  background-color: #ccc;
   
 }
 #product-heading{
@@ -340,14 +340,15 @@ footer .footer-below {
 }
 
 .first{
-background-color: ;
+background-color:#e6e6e6 ;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 .second{
 background-color:#f2f2f2  ;
+margin-top: 10px;
+margin-bottom: 10px;
 
-margin-top: 20px;
-padding-top: 10px;
-padding-bottom: 10px;
 }
 .desc p{
   font-family: Raleway,sans-serif;
@@ -376,15 +377,30 @@ font-family: Raleway,sans-serif;
  }
  .buy{
   text-align: right;
-  margin-right: 10%;
+  position: absolute;
+  bottom: 10;
+  right: 10;
+ }
+  .buy2{
+  text-align: left;
+  position: absolute;
+  bottom: 10;
+  left:10;
+
  }
  .buy i, .buy p{
   
   display: inline;
  }
+ .buy2 i, .buy2 p{
+  
+  display: inline;
+ }
   .buy1{
   text-align: right;
-  margin-right: 10%;
+  position: absolute;
+  bottom: 0;
+  right:0;
  }
  .buy1 i, .buy1 p{
   
