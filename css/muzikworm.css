@@ -355,8 +355,8 @@ span.text-content span {
   display: table-cell;
 }
 
-.product{
-
+.product span{
+vertical-align: middle;
 }
 div.product a:hover span.text-content{
 
