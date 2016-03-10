@@ -143,28 +143,7 @@
 
 </div>
 </a>
-<!-- Background video-->
-<div id="videomodal" class="videomodalclass modal fade" role="video">
- <div class="modal-video">
-         
-           <video id="videoContainer">
-           <source src="video/modalvideo.mp4" type="video/mp4">
-           </video>
-            
-           <div class="videobutton">
-             <button type="button" class="close" data-dismiss="modal" onclick="pausefunction()"><i class="fa fa-times fa-2x"></i></button>
-           </div>
- </div>
-</div>
-<script>
-function pausefunction(){
-  $("#videoContainer")[0].pause();
-}
-function playfunction(){
-  $("#videoContainer")[0].play();
 
-}
-</script>
 <!--div id="bgvid">
  <video muted="muted" autoplay loop  id="bgvid">
     <source src="video/video.gif" type="video/mp4">
@@ -232,6 +211,27 @@ function playfunction(){
 
 <!---------------------------------------------------------------------------------------------------------------------------------->
 </div>
+<!-- Background video-->
+<div id="videomodal" class="videomodalclass modal fade" role="video">
+ <div class="modal-video">
+         
+           <video id="videoContainer">
+           <source src="video/modalvideo.mp4" type="video/mp4">
+           </video>
+            
+           <div class="videobutton">
+             <button type="button" class="close" data-dismiss="modal" onclick="pausefunction()"><i class="fa fa-times fa-2x"></i></button>
+           </div>
+ </div>
+</div>
+<script>
+function pausefunction(){
+  $("#videoContainer")[0].pause();
+}
+function playfunction(){
+  $("#videoContainer")[0].play();
 
+}
+</script>
 </body>
 </html>
